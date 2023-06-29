@@ -8,7 +8,7 @@
         "telegram bot",
         "python"
     ],
-    "repository": "https://github.com/ocmgrouptest/OCM-TORRENT-BOT/tree/main",
+    "repository": "https://github.com/ocmgrouptest/OCM-TORRENT-BOT",
     "env":{
         "bot_token":{
             "description":"Telegram bot token",
