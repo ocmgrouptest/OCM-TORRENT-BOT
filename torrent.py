@@ -20,7 +20,7 @@ HI {} WELCOME TO RR BOT"""
 
 @run_async
 def start(update,context):
-	update.message.reply_text(START_TEXT.format(update.message.from_user.mention))
+	update.message.reply_text(START_TEXT.format(update.from_user.mention))
 
 @run_async    
 def search (update,context):
