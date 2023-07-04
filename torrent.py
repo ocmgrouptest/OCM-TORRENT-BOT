@@ -14,10 +14,13 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
+START_TEXT = """
+HI {} WELCOME TO RR BOT"""
+
+
 @run_async
 def start(update,context):
-	name=update.message.from_user.mention
-	update.message.reply_text("Hi! "+name+"\nWelcome to Torrent Search Bot 😃,\nYou can search torrents using this bot just send me a search query to get started")
+	update.message.reply_text(START_TEXT.format(message.from_user.mention))
 
 @run_async    
 def search (update,context):
