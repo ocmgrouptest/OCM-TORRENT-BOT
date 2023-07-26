@@ -15,7 +15,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 START_TEXT = """
-HI {} WELCOME TO RR BOT"""
+HI {} .send your query"""
 
 
 @run_async
