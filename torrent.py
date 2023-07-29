@@ -19,7 +19,11 @@ logger = logging.getLogger(__name__)
 
 @run_async
 def start(update,context):
-	update.message.reply_text("hi")
+	update.message.reply_photo(
+		photo="https://graph.org/file/05b256da0b445907212c6.jpg",
+		caption="hi"
+	)
+		
 
 @run_async    
 def search (update,context):
