@@ -14,13 +14,12 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
-START_TEXT = """
-HI {}. send your query"""
+
 
 
 @run_async
 def start(update,context):
-	update.message.reply_text(START_TEXT.format(update.message.from_user.mention))
+	update.message.reply_text("hi")
 
 @run_async    
 def search (update,context):
