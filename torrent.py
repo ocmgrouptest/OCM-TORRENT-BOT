@@ -23,7 +23,7 @@ hello send query for search in torrent
 @run_async
 def start(update,context):
 	update.message.reply_photo(
-		photo="https://graph.org/file/05b256da0b445907212c6.jpg",
+		photo="https://graph.org/file/d8d41271b9f907399bd18.jpg",
 		caption=(START_TEXT)
 	)
 		
