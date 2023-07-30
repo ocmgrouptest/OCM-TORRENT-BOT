@@ -15,7 +15,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 START_TEXT = """
-hello{}send query for search in torrent
+hello send query for search in torrent
 """
 
 
@@ -24,7 +24,7 @@ hello{}send query for search in torrent
 def start(update,context):
 	update.message.reply_photo(
 		photo="https://graph.org/file/05b256da0b445907212c6.jpg",
-		caption=(START_TEXT.format(message.from_user.mention))
+		caption=(START_TEXT)
 	)
 		
 
