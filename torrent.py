@@ -23,7 +23,7 @@ def start(update,context):
 	name=update.message.chat.first_name
 	update.message.reply_photo(
 		photo="https://graph.org/file/d8d41271b9f907399bd18.jpg",
-		caption=(START_TEXT)
+		caption=(START_TEXT.format)
 	)
 	
 @run_async    
