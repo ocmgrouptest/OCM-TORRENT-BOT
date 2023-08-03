@@ -15,15 +15,14 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 START_TEXT = """
-hello "+name"+ send query for search in torrent
+hello{first_name}send query for search in torrent
 """
 
 @run_async
 def start(update,context):
-	name=update.message.chat.first_name
 	update.message.reply_photo(
 		photo="https://graph.org/file/d8d41271b9f907399bd18.jpg",
-		caption=(START_TEXT.format)
+		caption=(START_TEXT.format(update.message.chat.first_name))
 	)
 	
 @run_async    
